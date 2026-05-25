@@ -1274,3 +1274,46 @@ body[data-lang="en"] .lang-pt { display: none; }
         font-size: 1.3rem !important;
     }
 }
+
+/* ==========================================================================
+   AJUSTE DE RESPONSIVIDADE - HOME (CORREÇÃO DE BUG MOBILE)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* 1. Corrige o Hero para empilhar verticalmente */
+    .hero-container {
+        flex-direction: column-reverse !important; /* Imagem embaixo, texto em cima */
+        text-align: center;
+        gap: 20px !important;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem !important; /* Ajusta o tamanho da fonte gigante */
+        line-height: 1.1 !important;
+    }
+
+    /* 2. Corrige a barra de estatísticas para ficar em colunas no celular */
+    .stats-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* 2 colunas */
+        gap: 20px !important;
+    }
+
+    .stat-item h2 {
+        font-size: 2rem !important; /* Diminui os números para caberem */
+    }
+
+    /* 3. Corrige o container "Sobre" (Preview) */
+    .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+    
+    .about-terminal {
+        width: 100% !important; /* Garante que o terminal não ultrapasse a tela */
+    }
+}
