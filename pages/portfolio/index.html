@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
+<body data-lang="pt">
 
     <video autoplay muted loop playsinline id="video-bg">
         <source src="../mp4/logo_background.mp4" type="video/mp4">
@@ -19,20 +19,57 @@
             <div class="nav-logo"><span class="glitch-text">GHOST CORE</span></div>
             <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
             <ul class="nav-links">
-                <li><a href="../../">Home</a></li>
-                <li><a href="../sobre/">Sobre Nós</a></li>
-                <li><a href="../servicos/">Nossos Serviços</a></li>
-                <li><a href="index.html" class="active">Portfólio</a></li>
-                <li><a href="../contato/" class="btn-nav">Contato Técnico</a></li>
+                <li>
+                    <a href="../../index.html">
+                        <span class="lang lang-pt">Home</span>
+                        <span class="lang lang-en">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../sobre/">
+                        <span class="lang lang-pt">Sobre Nós</span>
+                        <span class="lang lang-en">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../servicos/">
+                        <span class="lang lang-pt">Nossos Serviços</span>
+                        <span class="lang lang-en">Our Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="active">
+                        <span class="lang lang-pt">Portfólio</span>
+                        <span class="lang lang-en">Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../contato/" class="btn-nav">
+                        <span class="lang lang-pt">Contato Técnico</span>
+                        <span class="lang lang-en">Technical Contact</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main style="padding-top: 120px; padding-bottom: 80px;">
         <section class="portfolio-container">
+            
+            <div class="language-switch" style="justify-content: center; margin-bottom: 30px;">
+                <button onclick="setLanguage('pt')">PT</button>
+                <button onclick="setLanguage('en')">ENG</button>
+            </div>
+
             <div class="section-header">
-                <h2>PROJETOS <span class="highlight">EXECUTADOS</span></h2>
-                <p>Aplicações web, estruturas de dados e plataformas que estão atualmente em produção.</p>
+                <h2>
+                    <span class="lang lang-pt">PROJETOS <span class="highlight">EXECUTADOS</span></span>
+                    <span class="lang lang-en">EXECUTED <span class="highlight">PROJECTS</span></span>
+                </h2>
+                <p>
+                    <span class="lang lang-pt">Aplicações web, estruturas de dados e plataformas que estão atualmente em produção.</span>
+                    <span class="lang lang-en">Web applications, data structures, and platforms currently in production.</span>
+                </p>
             </div>
             
             <div class="portfolio-grid">
@@ -40,38 +77,79 @@
                 <div class="project-card">
                     <img src="../img/logofs.png" alt="Plataforma Front Security" class="project-img-fs">
                     <h3>Front Security</h3>
-                    <p>Desenvolvimento de plataforma web corporativa focada em soluções de segurança. Código estruturado para alta performance, tempo de carregamento otimizado e total responsividade.</p>
-                    <a href="https://frontsecurity.com.br/" target="_blank" class="btn-text" style="margin-top: 15px;">Acessar Site Live ➔</a>
+                    <p>
+                        <span class="lang lang-pt">Desenvolvimento de plataforma web corporativa focada em soluções de segurança. Código estruturado para alta performance, tempo de carregamento otimizado e total responsividade.</span>
+                        <span class="lang lang-en">Corporate web platform development focused on security solutions. Code structured for high performance, optimized load time, and full responsiveness.</span>
+                    </p>
+                    <a href="https://frontsecurity.com.br/" target="_blank" class="btn-text" style="margin-top: 15px;">
+                        <span class="lang lang-pt">Acessar Site Live ➔</span>
+                        <span class="lang lang-en">Access Live Site ➔</span>
+                    </a>
                 </div>
 
                 <div class="project-card">
                     <img src="../img/prop2.png" alt="Landing Page Tech" class="project-img">
-                    <h3>Landing Page de Conversão</h3>
-                    <p>Site de alta conversão estruturado com arquitetura limpa, integrando interfaces modernas com segurança de dados ponta a ponta.</p>
+                    <h3>
+                        <span class="lang lang-pt">Landing Page de Conversão</span>
+                        <span class="lang lang-en">Conversion Landing Page</span>
+                    </h3>
+                    <p>
+                        <span class="lang lang-pt">Site de alta conversão estruturado com arquitetura limpa, integrando interfaces modernas com segurança de dados ponta a ponta.</span>
+                        <span class="lang lang-en">High-conversion website structured with clean architecture, integrating modern interfaces with end-to-end data security.</span>
+                    </p>
+           
                 </div>
 
                 <div class="project-card">
                     <img src="../img/prop3.png" alt="Estruturas de Dados e API" class="project-img">
-                    <h3>Arquitetura de Dados & API</h3>
-                    <p>Desenvolvimento e otimização de estruturas de dados sistêmicas. Manipulação avançada de scripts para garantir comunicação fluida e segura entre servidores e o front-end.</p>
+                    <h3>
+                        <span class="lang lang-pt">Arquitetura de Dados & API</span>
+                        <span class="lang lang-en">Data Architecture & API</span>
+                    </h3>
+                    <p>
+                        <span class="lang lang-pt">Desenvolvimento e otimização de estruturas de dados sistêmicas. Manipulação avançada de scripts para garantir comunicação fluida e segura entre servidores e o front-end.</span>
+                        <span class="lang lang-en">Development and optimization of systemic data structures. Advanced script manipulation to ensure fluid and secure communication between servers and the front-end.</span>
+                    </p>
+         
                 </div>
 
                 <div class="project-card">
                     <img src="../img/prop4.png" alt="Cinematic Renders e Visuais" class="project-img">
-                    <h3>Visuais e Animações em Loop</h3>
-                    <p>Criação de identidades visuais dinâmicas, incluindo animações em loop contínuo e renders cinemáticos em 4K integrados diretamente no código da interface de utilizador.</p>
+                    <h3>
+                        <span class="lang lang-pt">Visuais e Animações em Loop</span>
+                        <span class="lang lang-en">Visuals and Loop Animations</span>
+                    </h3>
+                    <p>
+                        <span class="lang lang-pt">Criação de identidades visuais dinâmicas, incluindo animações em loop contínuo e renders cinemáticos em 4K integrados diretamente no código da interface de utilizador.</span>
+                        <span class="lang lang-en">Creation of dynamic visual identities, including continuous loop animations and 4K cinematic renders integrated directly into the user interface code.</span>
+                    </p>
+      
                 </div>
 
                 <div class="project-card">
                     <img src="../img/prop5.png" alt="Auditoria de Segurança" class="project-img">
-                    <h3>Auditoria de Sistemas (Pentest)</h3>
-                    <p>Simulação tática de intrusão e mapeamento de vulnerabilidades em aplicações corporativas. Fechamento de brechas e blindagem completa da operação.</p>
+                    <h3>
+                        <span class="lang lang-pt">Auditoria de Sistemas (Pentest)</span>
+                        <span class="lang lang-en">Systems Audit (Pentest)</span>
+                    </h3>
+                    <p>
+                        <span class="lang lang-pt">Simulação tática de intrusão e mapeamento de vulnerabilidades em aplicações corporativas. Fechamento de brechas e blindagem completa da operação.</span>
+                        <span class="lang lang-en">Tactical intrusion simulation and vulnerability mapping in corporate applications. Loopholes patching and complete operation shielding.</span>
+                    </p>
+
                 </div>
 
                 <div class="project-card">
                     <img src="../img/prop6.png" alt="Painel Administrativo Cloud" class="project-img">
-                    <h3>Dashboard Cloud Seguro</h3>
-                    <p>Sistema administrativo feito sob medida utilizando HTML, CSS e JavaScript avançado para gestão de recursos e monitoramento de tráfego em tempo real.</p>
+                    <h3>
+                        <span class="lang lang-pt">Dashboard Cloud Seguro</span>
+                        <span class="lang lang-en">Secure Cloud Dashboard</span>
+                    </h3>
+                    <p>
+                        <span class="lang lang-pt">Sistema administrativo feito sob medida utilizando HTML, CSS e JavaScript avançado para gestão de recursos e monitoramento de tráfego em tempo real.</span>
+                        <span class="lang lang-en">Custom administrative system built using HTML, CSS, and advanced JavaScript for resource management and real-time traffic monitoring.</span>
+                    </p>
+    
                 </div>
                 
             </div>
@@ -82,7 +160,10 @@
         <div class="footer-container">
             <div class="footer-col brand-col">
                 <div class="footer-logo"><span class="highlight">GHOST</span> CORE</div>
-                <p>Software Security & Systems Development. Elevando o padrão de código e proteção cibernética.</p>
+                <p>
+                    <span class="lang lang-pt">Software Security & Systems Development. Elevando o padrão de código e proteção cibernética.</span>
+                    <span class="lang lang-en">Software Security & Systems Development. Elevating the standard of code and cyber protection.</span>
+                </p>
                 <div class="social-links">
                     <a href="https://github.com/Eolemos" aria-label="GitHub">
                         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
@@ -94,29 +175,75 @@
             </div>
 
             <div class="footer-col">
-                <h4>Navegação</h4>
+                <h4>
+                    <span class="lang lang-pt">Navegação</span>
+                    <span class="lang lang-en">Navigation</span>
+                </h4>
                 <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../sobre/">Sobre Nós</a></li>
-                    <li><a href="../servicos/">Nossos Serviços</a></li>
-                    <li><a href="index.html">Portfólio de Projetos</a></li>
-                    <li><a href="../contato/">Contato Técnico</a></li>
+                    <li>
+                        <a href="../../index.html">
+                            <span class="lang lang-pt">Home</span>
+                            <span class="lang lang-en">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../sobre/">
+                            <span class="lang lang-pt">Sobre Nós</span>
+                            <span class="lang lang-en">About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../servicos/">
+                            <span class="lang lang-pt">Nossos Serviços</span>
+                            <span class="lang lang-en">Our Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span class="lang lang-pt">Portfólio de Projetos</span>
+                            <span class="lang lang-en">Project Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../contato/">
+                            <span class="lang lang-pt">Contato Técnico</span>
+                            <span class="lang lang-en">Technical Contact</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <div class="footer-col contact-col">
-                <h4>Sede Operacional</h4>
-                <p><svg viewBox="0 0 24 24" width="16" height="16" stroke="var(--neon-green)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Lisboa, Portugal</p>
+                <h4>
+                    <span class="lang lang-pt">Sede Operacional</span>
+                    <span class="lang lang-en">Headquarters</span>
+                </h4>
+                <p><svg viewBox="0 0 24 24" width="16" height="16" stroke="var(--neon-green)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> 
+                    <span class="lang lang-pt">Lisboa, Portugal</span>
+                    <span class="lang lang-en">Lisbon, Portugal</span>
+                </p>
                 <p><svg viewBox="0 0 24 24" width="16" height="16" stroke="var(--neon-green)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> contact@ghostcore.com</p>
-                <p>Atendimento Global</p>
+                <p>
+                    <span class="lang lang-pt">Atendimento Global</span>
+                    <span class="lang lang-en">Global Support</span>
+                </p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 GHOST CORE. Todos os direitos reservados. Código fonte protegido.</p>
+            <p>
+                <span class="lang lang-pt">&copy; 2026 GHOST CORE. Todos os direitos reservados. Código fonte protegido.</span>
+                <span class="lang lang-en">&copy; 2026 GHOST CORE. All rights reserved. Source code protected.</span>
+            </p>
         </div>
     </footer>
 
     <script>
+        // Função de Idioma
+        function setLanguage(lang) {
+            document.body.setAttribute("data-lang", lang);
+        }
+
+        // Script do Menu Mobile
         document.addEventListener('DOMContentLoaded', () => {
             const menu = document.querySelector('#mobile-menu');
             const menuLinks = document.querySelector('.nav-links');
