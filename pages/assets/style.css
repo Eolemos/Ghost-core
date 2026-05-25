@@ -577,6 +577,29 @@ header {
     padding-top: 15px;
 }
 
+/* Menu Hambúrguer - Estilo Simples */
+.menu-toggle { display: none; cursor: pointer; }
+.bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--neon-green); transition: all 0.3s ease; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    
+    .nav-links {
+        position: absolute;
+        top: 80px; 
+        left: -100%;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        padding: 20px 0;
+        transition: 0.3s;
+    }
+    
+    .nav-links.active { left: 0; }
+    
+    .nav-links li { margin: 15px 0; }
+}
+
 /* ==========================================================================
    CTA BANNER (RODAPÉ)
    ========================================================================== */

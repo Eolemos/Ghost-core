@@ -34,7 +34,12 @@
             <div class="nav-logo">
                 <span class="glitch-text" data-text="GHOST CORE">GHOST CORE</span>
             </div>
-            
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="pages/sobre/">Sobre Nós</a></li>
@@ -355,6 +360,13 @@
             <p>&copy; 2026 GHOST CORE. Todos os direitos reservados. Código fonte protegido.</p>
         </div>
     </footer>
-
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+            menu.addEventListener('click', () => {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+    });
+    </script>
 </body>
 </html>
