@@ -1156,3 +1156,53 @@ body[data-lang="en"] .lang-pt { display: none; }
     color: var(--text-muted);
     font-size: 1.1rem;
 }
+
+/* ==========================================================================
+   AJUSTE DE RESPONSIVIDADE (MOBILE - CORREÇÃO DE BUGS)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* Faz a grade de comparação empilhar corretamente */
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Ajusta o container da liderança para não estourar a tela */
+    .leadership-container {
+        padding: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .leadership-container .placeholder-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Reduz o tamanho das fontes nos títulos para caberem na tela do celular */
+    .about-page-hero h1 {
+        font-size: 2rem !important;
+    }
+
+    .manifesto-content h2, .section-header h2 {
+        font-size: 1.8rem !important;
+    }
+
+    /* Garante que o texto dentro dos cards não "vaze" para fora */
+    .feature-box, .pillar-card, .compare-card {
+        padding: 25px !important;
+    }
+}
+
+/* Garante que imagens e vídeos não forcem scroll horizontal */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Corrige o padding das seções principais no mobile */
+main {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
