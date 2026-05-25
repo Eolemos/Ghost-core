@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços | Ghost Core</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+
+  <body data-lang="pt">
+    <video autoplay muted loop playsinline id="video-bg">
+      <source src="../mp4/logo_background.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <span class="glitch-text" data-text="GHOST CORE">GHOST CORE</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../sobre/">Sobre</a></li>
+          <li><a href="../servicos/" class="active">Serviços</a></li>
+          <li><a href="../portfolio/">Portfólio</a></li>
+          <li><a href="../contato/">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="language-switch">
+              <button onclick="setLanguage('pt')">PT</button>
+              <button onclick="setLanguage('en')">ENG</button>
+            </div>
+
+            <h1>
+              <span class="lang lang-pt"
+                >SERVIÇOS DE <br /><span class="highlight"
+                  >PROGRAMAÇÃO</span
+                ></span
+              >
+              <span class="lang lang-en"
+                >PROGRAMMING <br /><span class="highlight">SERVICES</span></span
+              >
+            </h1>
+
+            <p>
+              <span class="lang lang-pt">
+                Criamos soluções digitais para empresas, projetos pessoais e
+                profissionais que precisam transformar ideias em sites,
+                sistemas, automações e ferramentas online.
+              </span>
+
+              <span class="lang lang-en">
+                We create digital solutions for companies, personal projects and
+                professionals who need to turn ideas into websites, systems,
+                automations and online tools.
+              </span>
+            </p>
+
+            <div class="features services-grid" style="padding: 40px 0 0">
+              <div class="feature-box service-card">
+                <div class="service-icon icon-site">
+                  <div class="screen"></div>
+                  <div class="cursor"></div>
+                </div>
+
+                <h3>
+                  <span class="lang lang-pt">Sites e Landing Pages</span>
+                  <span class="lang lang-en">Websites and Landing Pages</span>
+                </h3>
+
+                <p>
+                  <span class="lang lang-pt">
+                    Criamos páginas modernas, rápidas e fáceis de entender para
+                    apresentar sua marca, serviço, produto ou projeto.
+                  </span>
+
+                  <span class="lang lang-en">
+                    We create modern, fast and easy-to-understand pages to
+                    present your brand, service, product or project.
+                  </span>
+                </p>
+              </div>
+
+              <div class="feature-box service-card">
+                <div class="service-icon icon-system">
+                  <span class="gear gear-one">⚙</span>
+                  <span class="gear gear-two">⚙</span>
+                </div>
+
+                <h3>
+                  <span class="lang lang-pt">Sistemas Personalizados</span>
+                  <span class="lang lang-en">Custom Systems</span>
+                </h3>
+
+                <p>
+                  <span class="lang lang-pt">
+                    Desenvolvemos sistemas sob medida para organizar processos,
+                    clientes, vendas, tarefas e informações internas.
+                  </span>
+
+                  <span class="lang lang-en">
+                    We build custom systems to organize processes, clients,
+                    sales, tasks and internal information.
+                  </span>
+                </p>
+              </div>
+
+              <div class="feature-box service-card">
+                <div class="service-icon icon-api">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <h3>
+                  <span class="lang lang-pt">Integrações e APIs</span>
+                  <span class="lang lang-en">Integrations and APIs</span>
+                </h3>
+
+                <p>
+                  <span class="lang lang-pt">
+                    Conectamos plataformas, ferramentas e serviços para que tudo
+                    funcione de forma mais automática e eficiente.
+                  </span>
+
+                  <span class="lang lang-en">
+                    We connect platforms, tools and services so everything works
+                    in a more automatic and efficient way.
+                  </span>
+                </p>
+              </div>
+
+              <div class="feature-box service-card">
+                <div class="service-icon icon-maintenance">
+                  <span class="tool">✦</span>
+                  <span class="wrench">⌁</span>
+                </div>
+
+                <h3>
+                  <span class="lang lang-pt">Manutenção e Melhorias</span>
+                  <span class="lang lang-en">Maintenance and Improvements</span>
+                </h3>
+
+                <p>
+                  <span class="lang lang-pt">
+                    Corrigimos erros, melhoramos sites existentes, otimizamos
+                    desempenho e atualizamos projetos já publicados.
+                  </span>
+
+                  <span class="lang lang-en">
+                    We fix errors, improve existing websites, optimize
+                    performance and update projects that are already online.
+                  </span>
+                </p>
+              </div>
+
+              <div class="feature-box service-card">
+                <div class="service-icon icon-bot">
+                  <div class="bot-head">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="bot-antenna"></div>
+                </div>
+
+                <h3>
+                  <span class="lang lang-pt">Automações</span>
+                  <span class="lang lang-en">Automations</span>
+                </h3>
+
+                <p>
+                  <span class="lang lang-pt">
+                    Criamos soluções para reduzir tarefas repetitivas, organizar
+                    fluxos de trabalho e poupar tempo no dia a dia.
+                  </span>
+
+                  <span class="lang lang-en">
+                    We create solutions to reduce repetitive tasks, organize
+                    workflows and save time in daily operations.
+                  </span>
+                </p>
+              </div>
+
+              <div class="feature-box service-card">
+                <div class="service-icon icon-brain">
+                  <div class="brain-core">☊</div>
+                  <span class="pulse-dot dot-one"></span>
+                  <span class="pulse-dot dot-two"></span>
+                  <span class="pulse-dot dot-three"></span>
+                </div>
+
+                <h3>
+                  <span class="lang lang-pt">Consultoria Técnica Simples</span>
+                  <span class="lang lang-en">Simple Technical Consulting</span>
+                </h3>
+
+                <p>
+                  <span class="lang lang-pt">
+                    Mesmo que você não entenda de tecnologia, o
+                    <a href="../contato/" class="inline-link">Colaborador 1</a>
+                    pode ajudar você a entender o que seu projeto precisa e qual
+                    solução faz mais sentido.
+                  </span>
+
+                  <span class="lang lang-en">
+                    Even if you do not understand technology,
+                    <a href="../contato/" class="inline-link">Collaborator 1</a>
+                    can help you understand what your project needs and which
+                    solution makes the most sense.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="cta-group" style="margin-top: 40px">
+              <a href="../contato/" class="btn btn-primary">
+                <span class="lang lang-pt">Falar com Colaborador 1</span>
+                <span class="lang lang-en">Talk to Collaborator 1</span>
+              </a>
+
+              <a href="../portfolio/" class="btn btn-secondary">
+                <span class="lang lang-pt">Ver Portfólio</span>
+                <span class="lang lang-en">View Portfolio</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2026 GHOST CORE - Todos os direitos reservados.</p>
+        <p class="footer-sub">Operações Globais | Software Security</p>
+      </div>
+    </footer>
+
+    <script>
+      function setLanguage(lang) {
+        document.body.setAttribute("data-lang", lang);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Ghost Core</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+
+  <body data-lang="pt">
+    <video autoplay muted loop playsinline id="video-bg">
+      <source src="../mp4/logo_background.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <span class="glitch-text" data-text="GHOST CORE">GHOST CORE</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../sobre/">Sobre</a></li>
+          <li><a href="../servicos/">Serviços</a></li>
+          <li><a href="../portfolio/">Portfólio</a></li>
+          <li><a href="../contato/" class="active">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="language-switch">
+              <button onclick="setLanguage('pt')">PT</button>
+              <button onclick="setLanguage('en')">ENG</button>
+            </div>
+
+            <h1>
+              <span class="lang lang-pt">
+                CANAL DE <br />
+                <span class="highlight">CONTATO DIRETO</span>
+              </span>
+
+              <span class="lang lang-en">
+                DIRECT <br />
+                <span class="highlight">CONTACT CHANNEL</span>
+              </span>
+            </h1>
+
+            <p>
+              <span class="lang lang-pt">
+                Entre em contato com nossa equipe para projetos, auditorias de
+                segurança e desenvolvimento de sistemas.
+              </span>
+
+              <span class="lang lang-en">
+                Contact our team for projects, security audits and software
+                development.
+              </span>
+            </p>
+
+            <div class="features" style="padding: 40px 0 0">
+              <div class="feature-box">
+                <div class="flag-wave" title="Portugal">
+                  <span class="flag-strip strip-1"></span>
+                  <span class="flag-strip strip-2"></span>
+                  <span class="flag-strip strip-3"></span>
+                  <span class="flag-strip strip-4"></span>
+                  <span class="flag-strip strip-5"></span>
+                </div>
+
+                <h3>
+                  <span class="lang lang-pt">Colaborador 1</span>
+                  <span class="lang lang-en">Collaborator 1</span>
+                </h3>
+
+                <p>
+                  <span class="lang lang-pt">
+                    Atendimento direto via WhatsApp para suporte, auditorias e
+                    novos projetos.<br /><br />
+
+                    <span class="highlight">IDIOMAS:</span><br />
+
+                    PT Português<br />
+                    ENG Inglês
+                  </span>
+
+                  <span class="lang lang-en">
+                    Direct WhatsApp support for assistance, audits and new
+                    projects.<br /><br />
+
+                    <span class="highlight">LANGUAGES:</span><br />
+
+                    PT Portuguese<br />
+                    ENG English
+                  </span>
+                </p>
+
+                <br />
+
+                <a
+                  href="https://wa.me/351968822437"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2026 GHOST CORE - Todos os direitos reservados.</p>
+        <p class="footer-sub">Operações Globais | Software Security</p>
+      </div>
+    </footer>
+
+    <script>
+      function setLanguage(lang) {
+        document.body.setAttribute("data-lang", lang);
+      }
+    </script>
+  </body>
+</html>
