@@ -1103,3 +1103,56 @@ body[data-lang="en"] .lang-pt { display: none; }
     0%, 100% { transform: scale(1); opacity: 0.4; }
     50% { transform: scale(1.8); opacity: 1; }
 }
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS: NOSSOS PILARES
+   ========================================================================== */
+.pillars-section {
+    padding: 100px 5%;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pillar-card {
+    background: rgba(13, 13, 13, 0.5);
+    padding: 40px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.pillar-card:hover {
+    background: rgba(20, 20, 20, 0.8);
+    border-color: var(--neon-green);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 0 15px var(--neon-green-dim);
+}
+
+.pillar-number {
+    position: absolute;
+    top: -25px;
+    left: 30px;
+    font-size: 3rem;
+    font-family: var(--font-code);
+    font-weight: bold;
+    color: rgba(57, 255, 20, 0.15); /* Fica transparente por dentro */
+    -webkit-text-stroke: 1px var(--neon-green); /* Cria o contorno verde brilhante */
+}
+
+.pillar-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.pillar-card p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
