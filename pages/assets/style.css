@@ -711,3 +711,36 @@ footer {
     .timeline { padding-left: 20px; }
     .timeline-dot { left: -41px; width: 30px; height: 30px; font-size: 1rem; }
 }
+
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS: PORTFÓLIO
+   ========================================================================== */
+.portfolio-container { padding: 50px 5%; max-width: 1200px; margin: 0 auto; }
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--bg-panel);
+    padding: 20px;
+    border: 1px solid var(--glass-border);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: var(--neon-green);
+    transform: translateY(-5px);
+}
+
+/* --- AJUSTE DA IMAGEM --- */
+.project-img {
+    width: 100%;        /* Faz a imagem ocupar a largura total do card */
+    height: 250px;      /* Define uma altura fixa para todas ficarem iguais */
+    object-fit: cover;  /* Corta a imagem sem distorcer para preencher o espaço */
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: block;
+}

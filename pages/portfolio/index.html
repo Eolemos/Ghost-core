@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Ghost Core</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="video-bg">
+        <source src="../mp4/logo_background.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo"><span class="glitch-text">GHOST CORE</span></div>
+            <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <ul class="nav-links">
+                <li><a href="../../">Home</a></li>
+                <li><a href="../sobre/">Sobre Nós</a></li>
+                <li><a href="../servicos/">Nossos Serviços</a></li>
+                <li><a href="index.html" class="active">Portfólio</a></li>
+                <li><a href="../contato/" class="btn-nav">Contato Técnico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <section class="portfolio-container">
+            <div class="section-header">
+                <h2>NOSSO <span class="highlight">PORTFÓLIO</span></h2>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <img src="../img/prop1.png" alt="Descrição do Projeto" class="project-img">
+                    <h3>Sistema de Auditoria</h3>
+                    <p>Dashboard de monitoramento em tempo real com alertas de segurança.</p>
+                </div>
+                <div class="project-card">
+                    <img src="../img/prop2.png" alt="Descrição do Projeto" class="project-img">
+                    <h3>Landing Page Tech</h3>
+                    <p>Site de alta conversão para startup de tecnologia.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
