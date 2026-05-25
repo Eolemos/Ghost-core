@@ -608,9 +608,9 @@ footer {
 
 .footer-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 2fr 1fr 1.5fr; /* <-- Mudei aqui, agora são 3 colunas */
     gap: 40px;
-    max-width: 1300px;
+    max-width: 1200px; /* Dei uma leve ajustada pra ficar bem centralizado */
     margin: 0 auto;
     padding: 0 5% 50px;
 }
