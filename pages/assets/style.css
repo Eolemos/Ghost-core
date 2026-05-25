@@ -1226,3 +1226,51 @@ body[data-lang="en"] .lang-pt { display: none; }
         margin: 0 auto 20px auto; /* Centraliza a imagem no mobile */
     }
 }
+
+/* ==========================================================================
+   AJUSTE DE RESPONSIVIDADE - PÁGINA DE SERVIÇOS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* Centraliza o Hero e reduz fontes */
+    .hero {
+        padding: 80px 5% 40px !important;
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem !important;
+    }
+
+    /* Força o grid a ter apenas 1 coluna no celular */
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 20px 0 !important;
+    }
+
+    /* Garante que os cards não excedam a largura da tela */
+    .feature-box {
+        width: 100% !important;
+        padding: 30px 20px !important;
+    }
+
+    /* Ajuste no botão de idioma para não quebrar o topo */
+    .language-switch {
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-icon {
+        transform: scale(0.8); /* Reduz levemente o ícone para caber melhor */
+        margin: 0 auto 15px auto !important; /* Centraliza o ícone */
+        display: block;
+    }
+    
+    .feature-box h3 {
+        font-size: 1.3rem !important;
+    }
+}
