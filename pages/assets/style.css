@@ -1157,52 +1157,43 @@ body[data-lang="en"] .lang-pt { display: none; }
     font-size: 1.1rem;
 }
 
-/* ==========================================================================
-   AJUSTE DE RESPONSIVIDADE (MOBILE - CORREÇÃO DE BUGS)
-   ========================================================================== */
+/* --- CORREÇÕES CRÍTICAS DE RESPONSIVIDADE --- */
 
 @media (max-width: 768px) {
-    /* Faz a grade de comparação empilhar corretamente */
-    .comparison-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    /* Impede que o conteúdo ultrapasse a largura da tela */
+    body, html {
+        max-width: 100%;
+        overflow-x: hidden; /* Esconde qualquer barra lateral indesejada */
     }
 
-    /* Ajusta o container da liderança para não estourar a tela */
-    .leadership-container {
-        padding: 20px;
+    /* Ajusta o container principal para ter margens seguras */
+    .hero-container, .about-page-container, .manifesto-section, .comparison-section, .pillars-section {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        width: 100% !important;
+    }
+
+    /* Reduz o tamanho das fontes gigantes que quebram o layout */
+    .hero-content h1, .about-page-hero h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Faz com que a logo ou imagens fiquem centralizadas e não estourem */
+    .hero-image img, .project-img, .project-img-fs {
+        max-width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    /* Corrige o manifesto que estava cortando o texto */
+    .manifesto-content {
+        border-left: none !important;
+        padding-left: 0 !important;
         text-align: center;
-        gap: 20px;
     }
 
-    .leadership-container .placeholder-avatar {
-        width: 100px;
-        height: 100px;
+    /* Corrige a grade de comparação */
+    .comparison-grid {
+        grid-template-columns: 1fr !important;
     }
-
-    /* Reduz o tamanho das fontes nos títulos para caberem na tela do celular */
-    .about-page-hero h1 {
-        font-size: 2rem !important;
-    }
-
-    .manifesto-content h2, .section-header h2 {
-        font-size: 1.8rem !important;
-    }
-
-    /* Garante que o texto dentro dos cards não "vaze" para fora */
-    .feature-box, .pillar-card, .compare-card {
-        padding: 25px !important;
-    }
-}
-
-/* Garante que imagens e vídeos não forcem scroll horizontal */
-img, video {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Corrige o padding das seções principais no mobile */
-main {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
 }
