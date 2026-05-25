@@ -16,42 +16,39 @@
     <video autoplay muted loop playsinline id="video-bg">
       <source src="../mp4/logo_background.mp4" type="video/mp4" />
     </video>
-
     <div class="video-overlay"></div>
 
     <header>
-      <nav class="navbar">
-        <div class="nav-logo">
-          <span class="glitch-text" data-text="GHOST CORE">GHOST CORE</span>
-        </div>
-
-        <ul class="nav-links">
-          <li><a href="../sobre/">Sobre</a></li>
-          <li><a href="../servicos/" class="active">Serviços</a></li>
-          <li><a href="../portfolio/">Portfólio</a></li>
-          <li><a href="../contato/">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+            <div class="nav-logo"><span class="glitch-text">GHOST CORE</span></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../sobre/">Sobre Nós</a></li>
+                <li><a href="index.html" class="active">Nossos Serviços</a></li>
+                <li><a href="../portfolio/">Portfólio</a></li>
+                <li><a href="../contato/" class="btn-nav">Contato Técnico</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main style="padding-top: 100px;">
       <section class="hero">
         <div class="hero-container">
           <div class="hero-content">
+            
             <div class="language-switch">
               <button onclick="setLanguage('pt')">PT</button>
               <button onclick="setLanguage('en')">ENG</button>
             </div>
 
             <h1>
-              <span class="lang lang-pt"
-                >SERVIÇOS DE <br /><span class="highlight"
-                  >PROGRAMAÇÃO</span
-                ></span
-              >
-              <span class="lang lang-en"
-                >PROGRAMMING <br /><span class="highlight">SERVICES</span></span
-              >
+              <span class="lang lang-pt">SERVIÇOS DE <br /><span class="highlight">PROGRAMAÇÃO</span></span>
+              <span class="lang lang-en">PROGRAMMING <br /><span class="highlight">SERVICES</span></span>
             </h1>
 
             <p>
@@ -60,7 +57,6 @@
                 profissionais que precisam transformar ideias em sites,
                 sistemas, automações e ferramentas online.
               </span>
-
               <span class="lang lang-en">
                 We create digital solutions for companies, personal projects and
                 professionals who need to turn ideas into websites, systems,
@@ -69,27 +65,19 @@
             </p>
 
             <div class="features services-grid" style="padding: 40px 0 0">
+              
               <div class="feature-box service-card">
                 <div class="service-icon icon-site">
                   <div class="screen"></div>
                   <div class="cursor"></div>
                 </div>
-
                 <h3>
                   <span class="lang lang-pt">Sites e Landing Pages</span>
                   <span class="lang lang-en">Websites and Landing Pages</span>
                 </h3>
-
                 <p>
-                  <span class="lang lang-pt">
-                    Criamos páginas modernas, rápidas e fáceis de entender para
-                    apresentar sua marca, serviço, produto ou projeto.
-                  </span>
-
-                  <span class="lang lang-en">
-                    We create modern, fast and easy-to-understand pages to
-                    present your brand, service, product or project.
-                  </span>
+                  <span class="lang lang-pt">Criamos páginas modernas, rápidas e fáceis de entender para apresentar sua marca, serviço, produto ou projeto.</span>
+                  <span class="lang lang-en">We create modern, fast and easy-to-understand pages to present your brand, service, product or project.</span>
                 </p>
               </div>
 
@@ -98,47 +86,27 @@
                   <span class="gear gear-one">⚙</span>
                   <span class="gear gear-two">⚙</span>
                 </div>
-
                 <h3>
                   <span class="lang lang-pt">Sistemas Personalizados</span>
                   <span class="lang lang-en">Custom Systems</span>
                 </h3>
-
                 <p>
-                  <span class="lang lang-pt">
-                    Desenvolvemos sistemas sob medida para organizar processos,
-                    clientes, vendas, tarefas e informações internas.
-                  </span>
-
-                  <span class="lang lang-en">
-                    We build custom systems to organize processes, clients,
-                    sales, tasks and internal information.
-                  </span>
+                  <span class="lang lang-pt">Desenvolvemos sistemas sob medida para organizar processos, clientes, vendas, tarefas e informações internas.</span>
+                  <span class="lang lang-en">We build custom systems to organize processes, clients, sales, tasks and internal information.</span>
                 </p>
               </div>
 
               <div class="feature-box service-card">
                 <div class="service-icon icon-api">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <span></span><span></span><span></span>
                 </div>
-
                 <h3>
                   <span class="lang lang-pt">Integrações e APIs</span>
                   <span class="lang lang-en">Integrations and APIs</span>
                 </h3>
-
                 <p>
-                  <span class="lang lang-pt">
-                    Conectamos plataformas, ferramentas e serviços para que tudo
-                    funcione de forma mais automática e eficiente.
-                  </span>
-
-                  <span class="lang lang-en">
-                    We connect platforms, tools and services so everything works
-                    in a more automatic and efficient way.
-                  </span>
+                  <span class="lang lang-pt">Conectamos plataformas, ferramentas e serviços para que tudo funcione de forma mais automática e eficiente.</span>
+                  <span class="lang lang-en">We connect platforms, tools and services so everything works in a more automatic and efficient way.</span>
                 </p>
               </div>
 
@@ -147,49 +115,28 @@
                   <span class="tool">✦</span>
                   <span class="wrench">⌁</span>
                 </div>
-
                 <h3>
                   <span class="lang lang-pt">Manutenção e Melhorias</span>
                   <span class="lang lang-en">Maintenance and Improvements</span>
                 </h3>
-
                 <p>
-                  <span class="lang lang-pt">
-                    Corrigimos erros, melhoramos sites existentes, otimizamos
-                    desempenho e atualizamos projetos já publicados.
-                  </span>
-
-                  <span class="lang lang-en">
-                    We fix errors, improve existing websites, optimize
-                    performance and update projects that are already online.
-                  </span>
+                  <span class="lang lang-pt">Corrigimos erros, melhoramos sites existentes, otimizamos desempenho e atualizamos projetos já publicados.</span>
+                  <span class="lang lang-en">We fix errors, improve existing websites, optimize performance and update projects that are already online.</span>
                 </p>
               </div>
 
               <div class="feature-box service-card">
                 <div class="service-icon icon-bot">
-                  <div class="bot-head">
-                    <span></span>
-                    <span></span>
-                  </div>
+                  <div class="bot-head"><span></span><span></span></div>
                   <div class="bot-antenna"></div>
                 </div>
-
                 <h3>
                   <span class="lang lang-pt">Automações</span>
                   <span class="lang lang-en">Automations</span>
                 </h3>
-
                 <p>
-                  <span class="lang lang-pt">
-                    Criamos soluções para reduzir tarefas repetitivas, organizar
-                    fluxos de trabalho e poupar tempo no dia a dia.
-                  </span>
-
-                  <span class="lang lang-en">
-                    We create solutions to reduce repetitive tasks, organize
-                    workflows and save time in daily operations.
-                  </span>
+                  <span class="lang lang-pt">Criamos soluções para reduzir tarefas repetitivas, organizar fluxos de trabalho e poupar tempo no dia a dia.</span>
+                  <span class="lang lang-en">We create solutions to reduce repetitive tasks, organize workflows and save time in daily operations.</span>
                 </p>
               </div>
 
@@ -200,57 +147,92 @@
                   <span class="pulse-dot dot-two"></span>
                   <span class="pulse-dot dot-three"></span>
                 </div>
-
                 <h3>
-                  <span class="lang lang-pt">Consultoria Técnica Simples</span>
-                  <span class="lang lang-en">Simple Technical Consulting</span>
+                  <span class="lang lang-pt">Consultoria Técnica</span>
+                  <span class="lang lang-en">Technical Consulting</span>
                 </h3>
-
                 <p>
                   <span class="lang lang-pt">
-                    Mesmo que você não entenda de tecnologia, o
-                    <a href="../contato/" class="inline-link">Colaborador 1</a>
-                    pode ajudar você a entender o que seu projeto precisa e qual
-                    solução faz mais sentido.
+                    Mesmo que você não entenda de tecnologia, o <a href="../contato/" class="inline-link">Colaborador 1</a> pode ajudar você a entender o que seu projeto precisa.
                   </span>
-
                   <span class="lang lang-en">
-                    Even if you do not understand technology,
-                    <a href="../contato/" class="inline-link">Collaborator 1</a>
-                    can help you understand what your project needs and which
-                    solution makes the most sense.
+                    Even if you do not understand technology, <a href="../contato/" class="inline-link">Collaborator 1</a> can help you understand what your project needs.
                   </span>
                 </p>
               </div>
             </div>
 
-            <div class="cta-group" style="margin-top: 40px">
+            <div class="cta-group" style="margin-top: 40px; justify-content: center;">
               <a href="../contato/" class="btn btn-primary">
                 <span class="lang lang-pt">Falar com Colaborador 1</span>
                 <span class="lang lang-en">Talk to Collaborator 1</span>
               </a>
-
               <a href="../portfolio/" class="btn btn-secondary">
                 <span class="lang lang-pt">Ver Portfólio</span>
                 <span class="lang lang-en">View Portfolio</span>
               </a>
             </div>
+            
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <p>&copy; 2026 GHOST CORE - Todos os direitos reservados.</p>
-        <p class="footer-sub">Operações Globais | Software Security</p>
-      </div>
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo"><span class="highlight">GHOST</span> CORE</div>
+                <p>Software Security & Systems Development. Elevando o padrão de código e proteção cibernética.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Eolemos" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.instagram.com/_desativada_2k28/" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../sobre/">Sobre Nós</a></li>
+                    <li><a href="index.html">Nossos Serviços</a></li>
+                    <li><a href="../portfolio/">Portfólio de Projetos</a></li>
+                    <li><a href="../contato/">Contato Técnico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Sede Operacional</h4>
+                <p><svg viewBox="0 0 24 24" width="16" height="16" stroke="var(--neon-green)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Lisboa, Portugal</p>
+                <p><svg viewBox="0 0 24 24" width="16" height="16" stroke="var(--neon-green)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> contact@ghostcore.com</p>
+                <p>Atendimento Global</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GHOST CORE. Todos os direitos reservados. Código fonte protegido.</p>
+        </div>
     </footer>
 
     <script>
+      // Função de Troca de Idioma
       function setLanguage(lang) {
         document.body.setAttribute("data-lang", lang);
       }
+
+      // Função do Menu Mobile
+      document.addEventListener('DOMContentLoaded', () => {
+          const menu = document.querySelector('#mobile-menu');
+          const menuLinks = document.querySelector('.nav-links');
+          if (menu && menuLinks) {
+              menu.addEventListener('click', () => {
+                  menu.classList.toggle('is-active');
+                  menuLinks.classList.toggle('active');
+              });
+          }
+      });
     </script>
   </body>
 </html>
