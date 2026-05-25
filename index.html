@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghost Core | Software Security & Systems</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <title>Ghost Core | Software Security & Systems Development</title>
+    <meta name="description" content="Ghost Core oferece proteção de elite, auditoria contra vulnerabilidades e desenvolvimento de arquiteturas de software de alta performance.">
+    <meta name="keywords" content="Cybersegurança, Desenvolvimento Web, API, Pentest, HTML, CSS, JavaScript, Segurança da Informação">
+    <meta name="author" content="Gabriel Lemos | Ghost Core">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ghostcore.com/">
+    <meta property="og:title" content="Ghost Core | Software Security & Systems">
+    <meta property="og:description" content="Proteção de elite e desenvolvimento de sistemas de alta performance.">
+    <meta property="og:image" content="pages/img/logo-semfundo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="pages/assets/style.css">
 </head>
 <body>
@@ -12,19 +27,24 @@
     <video autoplay muted loop playsinline id="video-bg">
         <source src="pages/mp4/logo_background.mp4" type="video/mp4">
     </video>
-    
     <div class="video-overlay"></div>
 
     <header>
         <nav class="navbar">
             <div class="nav-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
                 <span class="glitch-text" data-text="GHOST CORE">GHOST CORE</span>
             </div>
+            
             <ul class="nav-links">
-                <li><a href="pages/sobre/">Sobre</a></li>
-                <li><a href="pages/servicos/">Serviços</a></li>
-                <li><a href="pages/portfolio/">Portfólio</a></li>
-                <li><a href="pages/contato/">Contato</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">A Empresa</a></li>
+                <li><a href="#services">Especialidades</a></li>
+                <li><a href="#tech-stack">Tecnologias</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="pages/contato/" class="btn-nav">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
@@ -33,46 +53,321 @@
         <section class="hero" id="home">
             <div class="hero-container">
                 <div class="hero-image">
-                    <img src="pages/img/logo-semfundo.png" alt="Ghost Core Logo">
+                    <img src="pages/img/logo-semfundo.png" alt="Ghost Core Logo Oficial">
                 </div>
                 
                 <div class="hero-content">
+                    <div class="system-status">
+                        <span class="status-dot"></span> STATUS: SISTEMA ONLINE & SEGURO
+                    </div>
                     <h1>SOFTWARE SECURITY <br> <span class="highlight">& SYSTEMS DEVELOPMENT</span></h1>
-                    <p>Proteção de elite, auditoria contra vulnerabilidades e desenvolvimento de arquiteturas de software de alta performance.</p>
+                    <p>Proteção de elite, auditoria contra vulnerabilidades e desenvolvimento de arquiteturas de software de alta performance para empresas que não podem parar.</p>
                     
                     <div class="cta-group">
                         <a href="pages/servicos/" class="btn btn-primary">Nossos Serviços</a>
-                        <a href="pages/contato/" class="btn btn-secondary">Iniciar Projeto</a>
+                        <a href="pages/contato/" class="btn btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Iniciar Projeto
+                        </a>
                     </div>
                 </div>
             </div>  
         </section>
 
-        <section class="features">
-            <div class="feature-box">
-                <div class="icon">[ 🛡️ ]</div>
-                <h3>Segurança Cibernética</h3>
-                <p>Auditorias profundas, testes de invasão e proteção de dados sensíveis para garantir a integridade do seu sistema.</p>
+        <section class="stats-bar">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h2>99.9%</h2>
+                    <p>Uptime Garantido</p>
+                </div>
+                <div class="stat-item">
+                    <h2>0-Day</h2>
+                    <p>Vulnerabilidades Mitigadas</p>
+                </div>
+                <div class="stat-item">
+                    <h2>&lt; 50ms</h2>
+                    <p>Latência de API</p>
+                </div>
+                <div class="stat-item">
+                    <h2>24/7</h2>
+                    <p>Monitoramento Tático</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview" id="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>A <span class="highlight">GHOST CORE</span></h2>
+                    <h3>Não escrevemos apenas código. Nós blindamos operações.</h3>
+                    <p>Nascemos da necessidade crítica de unir segurança digital militar com design web e engenharia de software de ponta. Na GHOST CORE, acreditamos que um sistema não é eficiente se não for 100% seguro.</p>
+                    <p>Operamos nas sombras desenvolvendo ecossistemas digitais impenetráveis, de estruturas front-end limpas a back-ends complexos. Seu negócio foca no crescimento; nós garantimos que nada o derrube.</p>
+                    
+                    <ul class="about-checklist">
+                        <li>✔️ Desenvolvimento focado em OWASP Top 10</li>
+                        <li>✔️ Otimização de Performance (Core Web Vitals)</li>
+                        <li>✔️ Código Limpo, Escalável e Documentado</li>
+                    </ul>
+
+                    <a href="pages/sobre/" class="btn-text">Conheça nosso Core ➔</a>
+                </div>
+                <div class="about-terminal">
+                    <div class="terminal-header">
+                        <span class="btn-close"></span>
+                        <span class="btn-min"></span>
+                        <span class="btn-max"></span>
+                        <span class="terminal-title">bash - root@ghostcore:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">root@ghostcore:~$</span> ./init_system.sh</p>
+                        <p class="output">Carregando módulos de segurança... [OK]</p>
+                        <p class="output">Estabelecendo conexões API... [OK]</p>
+                        <p class="output">Verificando integridade de banco de dados... [OK]</p>
+                        <p><span class="prompt">root@ghostcore:~$</span> echo "We are Ghost Core."</p>
+                        <p class="output">We are Ghost Core.</p>
+                        <p class="cursor">_</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="section-header">
+                <h2>NOSSA <span class="highlight">ATUAÇÃO</span></h2>
+                <p>Módulos operacionais desenhados para suprir todas as necessidades digitais do seu negócio.</p>
             </div>
 
-            <div class="feature-box">
-                <div class="icon">[ 💻 ]</div>
-                <h3>Sistemas e APIs</h3>
-                <p>Desenvolvimento focado em estabilidade, integração de APIs e infraestrutura de rede escalável.</p>
-            </div>
+            <div class="features">
+                <div class="feature-box">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--neon-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>Segurança Ofensiva</h3>
+                    <p>Testes de intrusão (Pentest) em aplicações web e mobile. Simulamos ataques reais para descobrir brechas antes dos cibercriminosos.</p>
+                </div>
 
-            <div class="feature-box">
-                <div class="icon">[ ⚡ ]</div>
-                <h3>Alta Performance</h3>
-                <p>Otimização extrema de código e servidores para garantir respostas em milissegundos sem quedas.</p>
+                <div class="feature-box">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--neon-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Engenharia Web</h3>
+                    <p>Desenvolvimento em HTML5, CSS3 avançado e JavaScript. Criamos sistemas modulares, landing pages focadas em conversão e sites imersivos.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--neon-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                    </div>
+                    <h3>Integração de APIs</h3>
+                    <p>Conectamos o seu sistema com o mundo. Desenvolvimento de endpoints RESTful, comunicação fluida com gateways de pagamento e CRMs.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--neon-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Infra e Servidores</h3>
+                    <p>Otimização de servidores dedicados e cloud (AWS, VPS). Garantimos altíssimo tráfego sem queda de performance ou latência.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--neon-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Code Review</h3>
+                    <p>Análise estática e dinâmica de código fonte (SAST/DAST) para identificar lógicas defeituosas que podem vazar dados corporativos.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--neon-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>Consultoria Especializada</h3>
+                    <p>Treinamento de equipes de TI, adequação a leis de proteção de dados (LGPD/GDPR) e elaboração de planos de resposta a incidentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="section-header">
+                <h2>PROTOCOLO DE <span class="highlight">DESENVOLVIMENTO</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content">
+                        <h3>Reconhecimento</h3>
+                        <p>Análise profunda das necessidades do projeto, mapeamento da arquitetura atual e identificação de riscos potenciais.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content">
+                        <h3>Arquitetura Lógica</h3>
+                        <p>Design de wireframes, estrutura de banco de dados e diagramação de APIs para garantir escalabilidade desde o dia zero.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content">
+                        <h3>Codificação Tática</h3>
+                        <p>Construção do sistema utilizando as linguagens mais eficientes, com testes contínuos de segurança e performance embarcados.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content">
+                        <h3>Deploy Blindado</h3>
+                        <p>Lançamento em ambiente de produção com firewall configurado, certificados instalados e monitoramento 24h ativado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack" id="tech-stack">
+            <div class="section-header">
+                <h2>NOSSO <span class="highlight">ARSENAL</span></h2>
+                <p>Tecnologias de classe mundial utilizadas nas nossas operações.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">HTML5 & CSS3</div>
+                <div class="tech-item">JavaScript / ES6</div>
+                <div class="tech-item">React.js</div>
+                <div class="tech-item">Node.js</div>
+                <div class="tech-item">Python</div>
+                <div class="tech-item">Linux / Bash</div>
+                <div class="tech-item">Docker</div>
+                <div class="tech-item">AWS / Cloud</div>
+                <div class="tech-item">PostgreSQL</div>
+                <div class="tech-item">Git / GitHub</div>
+                <div class="tech-item">Kali Linux Tools</div>
+                <div class="tech-item">OWASP ZAP</div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="section-header">
+                <h2>FAQ / <span class="highlight">DÚVIDAS FREQUENTES</span></h2>
+            </div>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>Vocês desenvolvem o design visual ou apenas a programação?</summary>
+                    <div class="faq-content">
+                        <p>Atuamos de ponta a ponta. Desenvolvemos interfaces visuais imersivas em CSS, mas nosso foco principal é garantir que a fundação do código por trás dessa beleza seja limpa, rápida e intransponível.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como funciona o processo de auditoria de segurança?</summary>
+                    <div class="faq-content">
+                        <p>Utilizamos metodologias de Black-box e White-box. Tentamos invadir seu sistema simulando ataques reais (SQL Injection, XSS, DDoS). Após o teste, emitimos um relatório detalhado e aplicamos os patches de correção.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Quanto tempo leva para criar uma Landing Page segura?</summary>
+                    <div class="faq-content">
+                        <p>Depende da complexidade e das integrações de API necessárias, mas projetos institucionais e Landing Pages focadas em conversão costumam ser entregues em prazos curtos que variam de 7 a 15 dias úteis.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-wrapper">
+                <h2>Sua infraestrutura digital está pronta para o tráfego pesado?</h2>
+                <p>Hackers não esperam você atualizar seu sistema. Proteja seus ativos hoje ou inicie a construção da sua plataforma definitiva com a Ghost Core.</p>
+                <div class="cta-buttons-large">
+                    <a href="pages/contato/" class="btn btn-primary btn-large">Solicitar Consultoria Imediata</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 GHOST CORE - Todos os direitos reservados.</p>
-            <p class="footer-sub">Operações Globais | Software Security</p>
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="highlight">GHOST</span> CORE
+                </div>
+                <p>Software Security & Systems Development. Elevando o padrão de código e proteção cibernética.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="pages/sobre/">Sobre Nós</a></li>
+                    <li><a href="pages/servicos/">Nossos Serviços</a></li>
+                    <li><a href="pages/portfolio/">Portfólio de Projetos</a></li>
+                    <li><a href="pages/contato/">Contato Técnico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atuação</h4>
+                <ul>
+                    <li><a href="#">Desenvolvimento de API</a></li>
+                    <li><a href="#">Auditoria de Segurança</a></li>
+                    <li><a href="#">Penetration Testing</a></li>
+                    <li><a href="#">Landing Pages Seguras</a></li>
+                    <li><a href="#">Gestão de Servidores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Sede Operacional</h4>
+                <p>
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="var(--neon-green)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Lisboa, Portugal
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="var(--neon-green)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    contact@ghostcore.com
+                </p>
+                <p>Atendimento Global</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 GHOST CORE. Todos os direitos reservados. Código fonte protegido.</p>
         </div>
     </footer>
 
